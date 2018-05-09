@@ -51,4 +51,19 @@ public class MainFragment extends Fragment {
     public void setHelloText(String text) {
         tvHello.setText(text);
     }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        // Save state here
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        if (savedInstanceState != null) {
+            // Restore state here
+        }
+    }
 }
